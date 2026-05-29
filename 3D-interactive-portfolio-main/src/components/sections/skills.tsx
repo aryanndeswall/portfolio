@@ -61,7 +61,7 @@ const SKILLS_SHOWCASE = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="w-full relative min-h-screen pb-32">
+    <section id="skills" className="w-full relative min-h-screen pb-32 pointer-events-none">
       {/* ── ZONE A: Sticky Interactive Keyboard Area (100vh scroll container) ── */}
       <div className="w-full h-screen relative flex flex-col items-center justify-start pt-24 pointer-events-none">
         <div className="top-[70px] sticky mb-96 pointer-events-auto">
@@ -85,11 +85,11 @@ const SkillsSection = () => {
       </div>
 
       {/* ── ZONE B: Premium Recruiter-Friendly Showcase Grid ── */}
-      <div className="max-w-6xl mx-auto px-6 relative z-10 mt-12 md:mt-24">
+      <div className="max-w-6xl mx-auto px-6 relative z-10 mt-12 md:mt-24 pointer-events-none">
         {/* Decorative Grid Separator */}
         <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/20 to-transparent mb-16" />
 
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 pointer-events-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-slate-100 mb-4 tracking-wide uppercase font-mono">
             Technical Arsenal
           </h3>
@@ -99,7 +99,7 @@ const SkillsSection = () => {
         </div>
 
         {/* Masonry-style Responsive Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8" role="list" aria-label="Skills Category Showcase">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pointer-events-none" role="list" aria-label="Skills Category Showcase">
           {SKILLS_SHOWCASE.map((category, catIdx) => (
             <motion.div
               key={category.title}
@@ -107,7 +107,7 @@ const SkillsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: catIdx * 0.1 }}
-              className="glass-skill-card rounded-2xl p-6 md:p-8 backdrop-blur-md relative border border-white/10 shadow-xl shadow-black/40 overflow-hidden group"
+              className="glass-skill-card rounded-2xl p-6 md:p-8 backdrop-blur-md relative border border-white/10 shadow-xl shadow-black/40 overflow-hidden group pointer-events-auto"
               role="listitem"
             >
               {/* Card corner light sweep decoration */}
