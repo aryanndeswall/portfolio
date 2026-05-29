@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Archivo_Black } from "next/font/google";
 import "./globals.css";
+import GradualBlur from "@/components/ui/GradualBlur";
 import ElasticCursor from "@/components/ui/ElasticCursor";
-import Particles from "@/components/Particles";
+import GridScan from "@/components/ui/GridScan";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/header/header";
 import { Toaster } from "@/components/ui/toaster";
@@ -46,18 +46,13 @@ export const metadata: Metadata = {
   },
 };
 
-const archivoBlack = Archivo_Black({
-  subsets: ["latin"],
-  weight: "400",
-});
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[archivoBlack.className].join(" ")}>
+    <html lang="en" className="archivo-black">
       <head>
         <Script
           defer
@@ -72,14 +67,30 @@ export default function RootLayout({
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <Particles
+          <GridScan
+            sensitivity={0.55}
+            lineThickness={1}
+            linesColor="#1d1927"
+            gridScale={0.06}
+            scanColor="#a855f7"
+            scanOpacity={0.25}
+            enablePost={true}
+            bloomIntensity={0.4}
+            chromaticAberration={0.001}
+            noiseIntensity={0.005}
             className="fixed inset-0 -z-10 animate-fade-in"
-            quantity={100}
           />
           <Preloader>
             <SocketContextProvider>
-              <RemoteCursors />
+              {/* <RemoteCursors /> */}
               <TooltipProvider>
+                <GradualBlur
+                  target="page"
+                  preset="header"
+                  style={{ zIndex: 8 }}
+                  strength={2}
+                  opacity={0.8}
+                />
                 <Header />
                 {children}
                 <Footer />

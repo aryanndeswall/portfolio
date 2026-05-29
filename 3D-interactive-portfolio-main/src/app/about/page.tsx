@@ -43,26 +43,26 @@ import { TbTerminal2 } from "react-icons/tb";
 const CONTACT_LINKS = [
   {
     name: "Email",
-    content: "abhijitzende75@gmail",
-    href: "mailto:abhijitzende75@gmail.com",
+    content: "aryandeswal2006@gmail.com",
+    href: "mailto:aryandeswal2006@gmail.com",
     icon: <FaEnvelope height={"50px"} />,
   },
   {
     name: "Phone",
-    content: "1234567890",
-    href: "tel:8308509180",
+    content: "+91 7404023536",
+    href: "tel:+917404023536",
     icon: <FaPhone height={"50px"} />,
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/zende-abhijit/",
-    content: "/zende-abhijit",
+    href: "https://www.linkedin.com/in/aryanndeswall/",
+    content: "/aryanndeswall",
     icon: <FaLinkedin height={"50px"} />,
   },
   {
     name: "GitHub",
-    href: "https://github.com/Abhiz2411",
-    content: "/naresh-khatri",
+    href: "https://github.com/aryanndeswall",
+    content: "/aryanndeswall",
     icon: <FaGithub height={"50px"} />,
   },
 ];
@@ -251,9 +251,9 @@ function Page() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:items-center ml-10 md:ml-20 lg:ml-0">
-                <p className="text-center text-xl">Naresh Khatri</p>
+                <p className="text-center text-xl">Aryan Deswal</p>
                 <div className="text-xs bg-zinc-700 w-fit px-3 py-1 rounded-full">
-                  Web Developer
+                  Full Stack Developer
                 </div>
               </div>
             </div>
@@ -287,15 +287,10 @@ function Page() {
           >
             <h1 className="text-3xl mb-10 lg:md-20">About me</h1>
             <p className="mb-10 text-roboto">
-              Hey there! I&apos;m Abhijit, a Comp. Sci. Engineer with 1.5 year experience in Devlopment, DevOps and 
-              Database management with hands-on experience in deploying & automating workflows, and 
-              collaborating with foreign clients. Strong analytical skills,effective communication,
-              and a team-oriented approach to driving process improvements and delivering results.
+              Hey there! I&apos;m Aryan Deswal, a 2nd year B.Tech CSE student at PIET and full-stack developer passionate about building modern web applications, AI-powered platforms, and blockchain-based solutions. Specializing in full-stack development using React.js, Next.js, Node.js, and MongoDB, alongside AI API integrations and Web3 concepts. I earned 🥈 2nd place at the TRAE Re:Vibe Hackathon and have professional experience as a Data Analyst intern at Pickl.AI.
             </p>
-            <p className="mb-10">
-              When I&apos;m not coding, you can find me [Your
-              Interests/Hobbies], exploring new technologies, or sipping coffee
-              while brainstorming my next project.
+            <p className="mb-10 text-zinc-300 leading-relaxed">
+              When I&apos;m not coding, you can find me exploring cutting-edge AI developments, participating in competitive hackathons, or brainstorming my next open-source project.
             </p>
             <h1 className="text-3xl mb-10 lg:md-20">Stuff I use</h1>
             <div className="mb-5">

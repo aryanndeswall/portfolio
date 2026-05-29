@@ -12,6 +12,8 @@ import ContactForm from "../ContactForm";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { config } from "@/data/config";
+import BorderGlow from "@/components/ui/BorderGlow";
+
 const ContactSection = () => {
   return (
     <section id="contact" className="min-h-screen max-w-7xl mx-auto ">
@@ -28,27 +30,41 @@ const ContactSection = () => {
         </h2>
       </Link>
       <div className="grid grid-cols-1 md:grid-cols-2 z-[9999]">
-        <Card className="min-w-7xl bg-white/70 dark:bg-black/70 backdrop-blur-sm rounded-xl mt-10 md:mt-20">
-          <CardHeader>
-            <CardTitle className="text-4xl">Contact Form</CardTitle>
-            <CardDescription>
-              Please contact me directly at{" "}
-              <a
-                target="_blank"
-                href={`mailto:${config.email}`}
-                className="text-gray-200 cursor-can-hover rounded-lg"
-              >
-                {config.email.replace(/@/g, "(at)")}
-              </a>{" "}
-              or drop your info here.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ContactForm />
-          </CardContent>
-        </Card>
+        <BorderGlow
+          edgeSensitivity={30}
+          glowColor="260 85 70"
+          backgroundColor="transparent"
+          borderRadius={12}
+          glowRadius={40}
+          glowIntensity={1.0}
+          coneSpread={25}
+          animated={true}
+          colors={["#c084fc", "#f472b6", "#38bdf8"]}
+          className="min-w-7xl mt-10 md:mt-20 cursor-can-hover"
+        >
+          <Card className="min-w-7xl bg-white/70 dark:bg-black/70 backdrop-blur-sm rounded-xl border-none">
+            <CardHeader>
+              <CardTitle className="text-4xl">Contact Form</CardTitle>
+              <CardDescription>
+                Please contact me directly at{" "}
+                <a
+                  target="_blank"
+                  href={`mailto:${config.email}`}
+                  className="text-gray-200 cursor-can-hover rounded-lg"
+                >
+                  {config.email.replace(/@/g, "(at)")}
+                </a>{" "}
+                or drop your info here.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ContactForm />
+            </CardContent>
+          </Card>
+        </BorderGlow>
       </div>
     </section>
   );
 };
 export default ContactSection;
+

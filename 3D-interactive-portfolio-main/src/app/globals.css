@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* ── Hide native cursor — ElasticCursor handles it ──────── */
-*, *::before, *::after {
+.archivo-black {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+/* ── Hide native cursor safely — only when ElasticCursor is active ──────── */
+.custom-cursor-active,
+.custom-cursor-active *,
+.custom-cursor-active *::before,
+.custom-cursor-active *::after {
   cursor: none !important;
 }
 
@@ -85,6 +93,7 @@ canvas {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

@@ -1,4 +1,4 @@
-﻿import AceTernityLogo from "@/components/logos/aceternity";
+import AceTernityLogo from "@/components/logos/aceternity";
 import SlideShow from "@/components/slide-show";
 import { Button } from "@/components/ui/button";
 import { TypographyH3, TypographyP } from "@/components/ui/typography";
@@ -308,11 +308,11 @@ const projects: Project[] = [
   { // 01. AuditAI - AI Spend Audit SaaS
     id: "auditai",
     category: "AI SaaS",
-    title: "AuditAI â€” AI Spend Audit & Optimization",
+    title: "AuditAI - AI Spend Audit & Optimization",
     src: "/assets/projects-screenshots/auditai/1.png",
     screenshots: ["1.png"],
     live: "https://audit-ai-all.vercel.app",
-    github: "https://github.com/Aditya011-gif",
+    github: "https://github.com/aryanndeswall",
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
@@ -331,7 +331,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            AuditAI â€” AI-Powered Spend Audit for Startup Founders
+            AuditAI - AI-Powered Spend Audit for Startup Founders
           </TypographyP>
           <TypographyP className="font-mono">
             A premium, no-login AI spend audit tool for startup founders and engineering managers.
@@ -347,7 +347,7 @@ const projects: Project[] = [
           </p>
           <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
           <ul className="list-disc ml-6 font-mono space-y-2">
-            <li>No-login audit flow â€” instant value delivery</li>
+            <li>No-login audit flow - instant value delivery</li>
             <li>Deterministic AI optimization rule engine</li>
             <li>Sanitized, shareable public audit reports</li>
             <li>Smart email gate for qualified lead capture</li>
@@ -360,11 +360,11 @@ const projects: Project[] = [
   { // 02. Agri-Score - AI Agricultural Credit Platform
     id: "agriscore",
     category: "AI Platform",
-    title: "Agri-Score â€” Agricultural Credit Risk AI",
+    title: "Agri-Score - Agricultural Credit Risk AI",
     src: "/assets/projects-screenshots/agriscore/1.png",
     screenshots: ["1.png"],
     live: "https://agriscore-omega.vercel.app",
-    github: "https://github.com/Aditya011-gif/agriscore",
+    github: "https://github.com/aryanndeswall/agriscore",
     skills: {
       frontend: [
         PROJECT_SKILLS.react,
@@ -381,7 +381,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            Agri-Score â€” Rural Agricultural Land Intelligence
+            Agri-Score - Rural Agricultural Land Intelligence
           </TypographyP>
           <TypographyP className="font-mono">
             AI-powered platform for rural agricultural land intelligence and credit risk assessment.
@@ -400,7 +400,7 @@ const projects: Project[] = [
           </ul>
           <TypographyH3 className="my-4 mt-8">Stack</TypographyH3>
           <p className="font-mono mb-2">
-            Flutter frontend Â· Python FastAPI Â· Machine Learning Â· Google Earth Engine Â· Supabase Â· Riverpod
+            Flutter frontend | Python FastAPI | Machine Learning | Google Earth Engine | Supabase | Riverpod
           </p>
         </div>
       );
@@ -409,11 +409,11 @@ const projects: Project[] = [
   { // 03. AgriChain - Web3 Blockchain Agricultural Supply Chain
     id: "agrichain",
     category: "Web3 & Blockchain",
-    title: "AgriChain â€” Blockchain Agricultural Supply Chain",
+    title: "AgriChain - Blockchain Agricultural Supply Chain",
     src: "/assets/projects-screenshots/agrichain/1.png",
     screenshots: ["1.png"],
     live: "https://agrichain-wheat.vercel.app",
-    github: "https://github.com/Aditya011-gif/geetauni-main",
+    github: "https://github.com/aryanndeswall/geetauni-main",
     skills: {
       frontend: [
         PROJECT_SKILLS.react,
@@ -430,7 +430,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            AgriChain â€” Web3 Agricultural Supply Chain
+            AgriChain - Web3 Agricultural Supply Chain
           </TypographyP>
           <TypographyP className="font-mono">
             Full-stack blockchain agricultural supply chain platform with Flutter web frontend and
@@ -450,7 +450,7 @@ const projects: Project[] = [
           </ul>
           <TypographyH3 className="my-4 mt-8">Stack</TypographyH3>
           <p className="font-mono mb-2">
-            Flutter Â· Solidity Â· Web3 Â· Firebase Â· ethers.js Â· Razorpay Â· Mocha/Chai testing
+            Flutter | Solidity | Web3 | Firebase | ethers.js | Razorpay | Mocha/Chai testing
           </p>
         </div>
       );

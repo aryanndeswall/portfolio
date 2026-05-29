@@ -51,7 +51,7 @@ const HeroSection = () => {
                           "cursor-default text-edge-outline font-display sm:text-7xl md:text-9xl "
                         )}
                       >
-                        Aaditya
+                        Aryan
                       </h1>
                     </TooltipTrigger>
                     <TooltipContent
@@ -85,7 +85,7 @@ const HeroSection = () => {
               </div>
               <div className="mt-8 md:ml-2 flex flex-col gap-3">
                 <Link
-                  href={"/aditya_jaspal_resume.pdf"}
+                  href={"/assets/aryan_deswal_resume.pdf"}
                   target="_blank"
                   className="flex-1"
                 >

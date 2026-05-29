@@ -30,15 +30,15 @@ const EasterEggs = () => {
         "color: #FFD700; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px;"
       );
 
-      ["naresh", "Naresh", "NARESH", "aaditya", "Aaditya", "AADITYA"].forEach((name) => {
+      ["naresh", "Naresh", "NARESH", "aryan", "Aryan", "ARYAN"].forEach((name) => {
         // @ts-ignore
         if (Object.hasOwn(window, name)) return;
         Object.defineProperty(window, name, {
           get() {
-            const isAaditya = name.toLowerCase() === "aaditya";
+            const isAryan = name.toLowerCase() === "aryan";
             console.log(
               `%c✨ Abra Kadabra! ✨\n\n` +
-                `You just summoned the magic of ${isAaditya ? "Aaditya" : "Naresh"}! 🧙‍♂️\n` +
+                `You just summoned the magic of ${isAryan ? "Aryan" : "Naresh"}! 🧙‍♂️\n` +
                 `What??? youre not impressed? Fine, but remember: With great power comes great responsibility! 💻⚡`,
 
               "color: #FF4500; font-size: 18px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin-top:10px"
